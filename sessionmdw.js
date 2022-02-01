@@ -13,6 +13,10 @@ app.use(bodyParser.urlencoded({
     extended:true
     }
 ))
+
+app.get("/" , function(req,res){
+    res.send("<body style='background-color:grey;color:white'><h1 style='margintop:300px'><center>Go to /admin and /member to access the application</center></h1></body>")
+})
 //mountinng sesssion
 admin.use(session({
     secret: "admin123",
