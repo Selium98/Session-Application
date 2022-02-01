@@ -1,6 +1,6 @@
 const express = require('express')
 const session = require('express-session')
-var port = 3000
+var port = process.env.PORT || 6700
 var bodyParser = require('body-parser')
 
 var app = express() //main server
